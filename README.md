@@ -1,14 +1,15 @@
-# 👨‍💼 Employee Management System (with REST API)
+#  Employee Management System (with REST API)
 
 A Laravel-based RESTful API project to manage employees, departments, and roles.
 
+I have added the postman collection file in same path please import the collection.
 ---
 
-## ✅ Project Setup Steps
+## Project Setup Steps
 
 1. **Clone the Repository**
 
-   git clone https://github.com/yourusername/employee-management-system.git
+   git clone https://github.com/Vanithakur/employee-management-system.git
    cd employee-management-system
 
 2. **Install Dependencies**
@@ -20,14 +21,14 @@ A Laravel-based RESTful API project to manage employees, departments, and roles.
 3. **Configure `.env` File**
 
    Update your `.env` file with appropriate DB credentials:
-   If we are setup this project in our local system then add these
+   If you are setting up this project on your local system, please follow these steps
 
    DB_CONNECTION=mysql
    DB_HOST=127.0.0.1
    DB_PORT=3306
-   DB_DATABASE=your_database
-   DB_USERNAME=your_username
-   DB_PASSWORD=your_password
+   DB_DATABASE=employee_management_system
+   DB_USERNAME=root
+   DB_PASSWORD=
 
 4. **Generate Application Key**
 
@@ -43,7 +44,7 @@ A Laravel-based RESTful API project to manage employees, departments, and roles.
 
 ---
 
-## 🗃️ Database Migration and Seeding
+## Database Migration and Seeding
 
 7. **Run Migrations**
 
@@ -59,7 +60,7 @@ A Laravel-based RESTful API project to manage employees, departments, and roles.
 
 All routes (except login/register) require Bearer Token Authorization.
 
-### 🔐 Authentication
+### Authentication
 
 | Method | Endpoint        | Description                  |
 | ------ | --------------- | ---------------------------- |
@@ -69,7 +70,7 @@ All routes (except login/register) require Bearer Token Authorization.
 
 ---
 
-### 👤 Employees
+### Employees
 
 | Method | Endpoint              | Description         |
 | ------ | --------------------- | ------------------- |
@@ -81,7 +82,7 @@ All routes (except login/register) require Bearer Token Authorization.
 
 ---
 
-### 🏢 Departments
+### Departments
 
 | Method | Endpoint                | Description          |
 | ------ | ----------------------- | -------------------- |
@@ -91,7 +92,7 @@ All routes (except login/register) require Bearer Token Authorization.
 
 ---
 
-### 🧑‍💼 Roles
+###  Roles
 
 | Method | Endpoint          | Description     |
 | ------ | ----------------- | --------------- |

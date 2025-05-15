@@ -18,25 +18,16 @@ use App\Http\Controllers\Api\RoleController;
 |
 */
 
-// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-//     return $request->user();
-// });
-
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 
 Route::middleware('auth:sanctum')->group(function () {
-    // Department routes
     Route::get('/departments', [DepartmentController::class, 'index']);
     Route::post('/departments', [DepartmentController::class, 'store']);
     Route::delete('/departments/{department}', [DepartmentController::class, 'destroy']);
-  
-    // Role routes
     Route::get('/roles', [RoleController::class, 'index']);
     Route::post('/roles', [RoleController::class, 'store']);
     Route::delete('/roles/{role}', [RoleController::class, 'destroy']);
-   
-    // Empolyee routes
     Route::post('/logout', [AuthController::class, 'logout']);
     Route::apiResource('employees', EmployeeController::class);
     Route::apiResource('departments', DepartmentController::class)->only(['index', 'store', 'destroy']);
